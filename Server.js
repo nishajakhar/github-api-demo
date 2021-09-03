@@ -6,7 +6,7 @@ var cors = require('cors');
 app.use(cors({ origin: 'http://localhost:3000' }));
 
 const bodyParser = require('body-parser'); // Middleware
-const routes = require('./Routes/user.route');
+const routes = require('./Routes/index');
 require('./database/connection');
 
 app.use(bodyParser.urlencoded());
